@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients - Column Navigation Exercise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        body{
+            background-color: lightslategray;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+        div{
+            background-color: white;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: lightgrey;
+        }
+        main{
+            width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: white;
+        }
+        nav{
+            text-align: center;
+        }
+        nav ul{
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+        }
+        nav li{
+            list-style-type: none;
+            display: inline-block;
+        }
+        nav li a{
+            display: inline-block;
+            padding: 10px 20px;
+        }  
+
+        @media (max-width: 768px) {
+            main{
+                width: calc(100% - 4em)
+            }
+            .row{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ingredients.html">Ingredients</a></li>
+                <li><a href="steps.html">Steps</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <h1>Ingredients</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quibusdam ipsum non eos est alias dolor consequatur eveniet quo nulla reiciendis, labore recusandae adipisci ducimus maiores. Asperiores perspiciatis nihil temporibus!</p>
+        </div>
+
+
+    <!-- Row -->
+
+
+    <div class="row">
+        <div class="col-1">
+            <h1>Column 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore laborum delectus accusamus nam quasi nulla alias natus? Cupiditate totam iure dolore sapiente soluta reiciendis, debitis praesentium in. Nemo, consectetur?</p>
+        </div>
+       
+         <div class="col-2">
+            <h1> Column 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto praesentium veritatis neque officiis! Dolore totam nisi adipisci facilis, non quisquam! Vero rerum modi dolores nihil delectus aliquid nulla. Tempora?</p>
+        </div>
+
+        <div class="col-3">
+            <h1>Column 3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, illo? Placeat quia, enim rem temporibus sed magnam accusantium, dolores explicabo, modi nemo ex! Quas molestias suscipit voluptatum perspiciatis non eum!</p>
+        </div>
+    </div>
+
+
+    <!-- /Row -->
+
+    
+    <div class="row">
+        <div class="col-4">
+            <h1>Column 4</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ullam est eum minima, tempora facere earum dolore natus eius laborum et, molestiae facilis odio tempore nesciunt nemo voluptas beatae. Dolorem.</p>
+        </div> 
+
+        <div class="col-5">
+            <h1>Column 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque excepturi culpa odit at optio qui quod numquam veniam eligendi enim alias, sit assumenda rem quam quibusdam quae consectetur, quis libero!
+            </p>
+            <img src="image/cookie.jpg" alt="cookie">
+        </div>  
+    </div>      
+    </main>
+
+
+
+
+</body>
+</html>
+
+
