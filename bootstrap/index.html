@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <style>
+        #primary-nav{
+            overflow: hidden;
+            background-color: white;
+        }
+        #primary-nav ul{
+            margin: 0;
+            padding: 0;
+        }
+        #primary-nav li{
+            list-style: none;
+            display: inline-block;
+        }
+        #toggle-nav{
+            display: none;
+        }
+        .row{
+            gap: 1;
+            display: flex;
+            max-width: auto;
+        }
+        div{
+            border: 1px solid lightgray;
+        }
+        .row > div{
+            flex-basis: 100%;
+        }
+        main{
+            max-width: auto;
+            margin: auto;
+            padding: 2em;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        @media (max-width: 767px){
+            main{
+                width: calc(100% - 4em)
+            }
+            .row{
+                flex-direction: column;
+            }        
+      #toggle-nav{
+        display: block;
+      }
+      #primary-nav{
+        max-height: 0;
+      }
+      #primary-nav li{
+        display: block;
+      }
+      body.nav-open #primary-nav{
+        max-height: 400px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <main>   
+    <button id="toggle-nav">&#9776;</button>
+    <nav id= "primary-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Bootstrap</h1>
+    <div class="row">
+        <div class="col-4">
+        <h2>Hello</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sint esse! Aut voluptatem quasi iste debitis neque rem sit atque temporibus vitae? Assumenda, dolore explicabo impedit at inventore animi.
+            </p>
+            <img src="image/fall.jpg" alt="leaves">
+
+        </div>
+
+        <div class="col-8">
+        <h2>Hello2</h2>    
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ducimus ipsa inventore, deleniti velit, beatae minima aperiam obcaecati nostrum esse voluptas sunt itaque ex est eum, ut maxime minus pariatur?
+            </p>
+    </div>
+    <div>
+
+    </div>
+</main> 
+</body>
+</html>
