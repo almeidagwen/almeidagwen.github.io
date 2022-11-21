@@ -1,0 +1,151 @@
+nav{
+    text-align: right;
+    color: white;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(109, 161, 233);
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav li a{
+    display: inline-block;
+    padding: 10px 20px;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: white;
+    display:inline-block;
+}
+a:active {
+    text-decoration: underline;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#primary-nav{
+    overflow: hidden;
+    background-color: white;
+}
+#primary-nav ul{
+    margin: 0;
+    padding: 0;
+}
+#primary-nav li{
+    list-style: none;
+    display: inline-block;
+}
+#toggle-nav{
+    display: none;
+}
+main{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(11, 37, 62);
+}
+body{
+    background-color: white;
+}
+img{
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.column{
+  padding: 10px;
+  color: white;
+  gap: 1em;
+}
+h1{
+    color: rgb(255, 255, 103);
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.col-40{
+    width: 40%
+    
+}
+.col-60{
+    width: 60%;
+    padding: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.col-1{
+    width: 40%;
+    margin-left: 1em;
+    margin-top: 1em;
+    }
+.col-2{
+    width: 60%;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    line-height: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    }
+.col-25{
+    width: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 1em;
+    gap: 1em;
+}    
+.col-33{
+    width: auto;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a.button{
+    text-align: center;
+}
+.button{
+    background-color: rgb(61, 123, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 15px 32px;
+}
+
+
+@media (max-width: 767px){
+main{
+    width: calc(100% - 4em)
+}
+.row{
+    flex-direction: column;
+}
+.col{
+
+}       
+#toggle-nav{
+    display: block;
+  }
+#primary-nav{
+    max-height: 0;
+  }
+#primary-nav li{
+    display: block;
+  }
+body.nav-open #primary-nav{
+    max-height: 400px;
+  }
+}
