@@ -54,7 +54,7 @@ main{
     background-color: rgb(11, 37, 62);
 }
 body{
-    background-color: white;
+    background-color: rgb(250, 245, 245);
 }
 img{
     width: 100%;
@@ -94,7 +94,7 @@ h2{
     }
 .col-2{
     width: 60%;
-    font-size: 22px;
+    font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     line-height: 2em;
@@ -103,6 +103,7 @@ h2{
     }
 .col-25{
     width: 25%;
+    font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     padding: 1em;
@@ -111,6 +112,7 @@ h2{
 .col-33{
     width: auto;
     color: white;
+    font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a.button{
