@@ -69,3 +69,42 @@ img{
 .col-50{
     width:50%
 }
+.grid-container {
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    border: 1px solid rgb(2, 40, 40);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+
+@media (max-width: 770px){
+    main{
+        width: calc(100% - 4em)
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col{
+    
+    }       
+    #toggle-nav{
+        display: block;
+      }
+    #primary-nav{
+        max-height: 0;
+      }
+    #primary-nav li{
+        display: block;
+      }
+    body.nav-open #primary-nav{
+        max-height: 400px;
+      }
+    }
