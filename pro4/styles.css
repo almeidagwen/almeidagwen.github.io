@@ -1,3 +1,32 @@
+main{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: none;
+}
+header{
+    background-color: rgb(2, 40, 40);
+    height: 180px;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+}
+h1{
+    font-size: 2em;
+    padding-top: 40px;
+}
+h2{
+    font-size: 2em;
+}
+.button{
+    background-color: rgb(2, 40, 40);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 15px 32px;
+}
 nav{
     text-align: center;
     color: rgb(252, 200, 157);
@@ -53,31 +82,34 @@ img{
     height: auto;
 }
 .column{
-    gap: 1em;
+    gap: 2em;
   }
 .row{
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 2em;
 }
-.col-1{
+.col-60{
     width: 60%;
+    padding-top: 60px;
     }
-.col-2{
+.col-40{
     width: 40%;
+    padding-top: 40px;
     }
 .col-50{
     width:50%
 }
 .grid-container {
     display: grid;
-    gap: 50px 100px;
+    gap: 50px;
     grid-template-columns: auto auto auto;
     padding: 10px;
   }
   
-  .grid-item {
-    border: 1px solid rgb(2, 40, 40);
+.grid-item {
+    border: 1px double rgb(2, 40, 40);
+    border: double;
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -92,11 +124,18 @@ img{
     .row{
         flex-direction: column;
     }
-    .col{
-    
-    }       
+    .col-40{
+        width: 100%;
+    }
+    .col-50{
+        width: 100%;
+    }     
+    .col-60{
+        width: 100%;
+    }  
     #toggle-nav{
         display: block;
+        position: absolute;
       }
     #primary-nav{
         max-height: 0;
@@ -107,4 +146,11 @@ img{
     body.nav-open #primary-nav{
         max-height: 400px;
       }
+    .grid-container {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: auto auto;
+        padding: 10px;
+      }
+ 
     }
