@@ -92,6 +92,9 @@ a:hover{
     list-style: none;
     display: inline-block;
 }
+#primary-nav address{
+    padding: 5px;
+}
 #toggle-nav{
     display: none;
 }
@@ -155,13 +158,24 @@ img{
         display: block;
         position: absolute;
         background-color: rgb(252, 200, 157);
+        top: 10px;
+        right: 10px;
       }
     #primary-nav{
         max-height: 0;
+        text-align: center;
+        width: 100%;
+        display: none;
       }
     #primary-nav li{
         display: block;
+        list-style: none;
+        margin-top: 20px;
       }
+    #primary-nav address{
+        list-style: none;
+        display: block;
+    }
     body.nav-open #primary-nav{
         max-height: 400px;
       }
